@@ -1,4 +1,4 @@
-git pull ....
+git pull git@github.com:Maximnnn/tet.git
 
 cp .env.example .env
 
