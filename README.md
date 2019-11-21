@@ -1,6 +1,11 @@
 need docker, npm
 
-installatioin
+sudo service apache2 stop
+
+sudo /etc/init.d/mysql stop
+
+
+Installatioin:
 
 git pull git@github.com:Maximnnn/tet.git
 
