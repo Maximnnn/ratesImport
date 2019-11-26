@@ -1,4 +1,4 @@
-need docker, npm
+need docker
 
 sudo service apache2 stop
 
