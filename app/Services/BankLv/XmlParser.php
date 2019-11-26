@@ -28,8 +28,8 @@ class XmlParser
         $doc = new DOMDocument();
         $doc->loadXML($this->xml->channel->item->description->asXML());
 
-        foreach ($doc->getElementsByTagName('description') as $chlidren) {
-            foreach ($chlidren->childNodes as $node) {
+        foreach ($doc->getElementsByTagName('description') as $children) {
+            foreach ($children->childNodes as $node) {
                 if ($node->nodeType == XML_CDATA_SECTION_NODE) {
                     $ratesStr .= $node->textContent;
                 }

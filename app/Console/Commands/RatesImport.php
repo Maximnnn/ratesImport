@@ -25,11 +25,7 @@ class RatesImport extends Command
      */
     protected $description = 'Command description';
 
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
+
     public function handle(Request $request)
     {
         $parser = new XmlParser($request->getXml());

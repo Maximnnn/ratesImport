@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/rates/{page}', function(int $page) {
-    return \App\Rates::with('currency')->paginate(20, '*', 'page', $page);
+    return \App\Rates::with('currency')
+        ->orderBy('id', 'desc')
+        ->paginate(20, '*', 'page', $page);
 });

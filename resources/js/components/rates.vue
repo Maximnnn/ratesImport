@@ -3,16 +3,18 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Rates</div>
+                    <div class="card-header">
+                        <div>
+                            <button class="btn btn-info" v-on:click="prev" :disabled="page === 1">Prev</button>
+                            <button class="btn btn-info" v-on:click="next" :disabled="page === lastPage">Next</button>
+                        </div>
+                    </div>
 
                     <div class="card-body">
                         <div v-for="rate in rates">
                             {{rate.currency.code}}: {{rate.rate}}
                         </div>
-                        <div>
-                            <button class="btn btn-info" v-on:click="prev" :disabled="page == 1">Prev</button>
-                            <button class="btn btn-info" v-on:click="next" :disabled="page == lastPage">Next</button>
-                        </div>
+
                     </div>
                 </div>
             </div>

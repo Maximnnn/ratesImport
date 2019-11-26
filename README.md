@@ -9,4 +9,6 @@ php composer install
 php artisan migrate
 php artisan import:rates
 
-npm install && npm run dev
+
+
+//npm install && npm run watch
