@@ -42,7 +42,7 @@ class RatesImport extends Command
             $currency = Currency::query()->firstOrCreate(['code' => $bankRate['currency']]);
 
             $rate = Rates::query()->firstOrNew(['date' => $parsedData['date']->format('Y-m-d'), 'currencyId' => $currency->id]);
-            $rate->currencyId= $currency->id;
+            $rate->currencyId = $currency->id;
             $rate->rate = $bankRate['rate'];
 
             $rate->save();
