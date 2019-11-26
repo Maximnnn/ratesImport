@@ -16,7 +16,7 @@ class RatesImport extends Command
      *
      * @var string
      */
-    protected $signature = 'import:rates {date=2011-11-11}';
+    protected $signature = 'import:rates';
 
     /**
      * The console command description.
